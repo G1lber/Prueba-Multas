@@ -67,8 +67,6 @@ Frontend (.env en fotomultas-chat-frontend):
 VITE_API_URL=http://localhost:3000/api
 ```
 
-No comitees tus claves reales (.gitignore lo descarta).
-
 ---
 
 ## Ejecutar en desarrollo
@@ -134,9 +132,3 @@ Si no hay Apitude/SIMIT configurado, el backend usa datos de ejemplo:
 - Añadir tests unitarios para servicios (simitService, groqService, ragService).
 - Crear .env.example con keys de ejemplo y añadir .gitignore.
 
----
-
-## Licencia
-MIT
-
----
