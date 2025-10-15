@@ -140,5 +140,3 @@ Si no hay Apitude/SIMIT configurado, el backend usa datos de ejemplo:
 MIT
 
 ---
-
-¿Quieres que cree también un archivo .env.example o que agregue instrucciones de despliegue (Docker / Heroku)?  
