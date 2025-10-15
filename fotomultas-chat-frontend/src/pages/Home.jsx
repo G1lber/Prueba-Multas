@@ -37,7 +37,7 @@ const HomePage = () => {
             con pasos claros a seguir
           </p>
           <button
-            onClick={() => navigate('/login')}
+            onClick={() => navigate('/chat')}
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 text-black rounded-lg hover:bg-primary-700 transition-colors font-medium text-lg shadow-lg hover:shadow-xl"
           >
             Comenzar Ahora
