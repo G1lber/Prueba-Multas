@@ -1,0 +1,40 @@
+fotomultas-chat/
+├── backend/
+│   ├── mcp-server/          # Servidor MCP
+│   │   ├── server.py
+│   │   ├── tools/
+│   │   │   └── simit_api.py
+│   │   └── requirements.txt
+│   │
+│   ├── rag-system/          # Sistema RAG
+│   │   ├── vectordb.py
+│   │   ├── embeddings.py
+│   │   └── documents/       # PDFs del código de tránsito
+│   │
+│   └── api/                 # API REST principal
+│       ├── main.py
+│       ├── routes/
+│       └── requirements.txt
+│
+└── frontend/
+    ├── src/
+    │   ├── components/
+    │   │   └── Chat.jsx
+    │   ├── pages/
+    │   └── App.jsx
+    └── package.json
+
+    🛠️ Stack Tecnológico Definitivo
+Backend (Node.js):
+
+Node.js + Express
+MCP SDK de Anthropic (para herramientas)
+LangChain.js (para RAG)
+Pinecone o ChromaDB (Vector DB)
+Anthropic SDK (Claude como agente)
+
+Frontend (React):
+
+React + Vite
+Tailwind CSS
+Axios para llamadas API
