@@ -455,3 +455,38 @@ Tu Nombre - G1lber
 ---
 
 **⭐ Si te gusta este proyecto, dale una estrella en GitHub!**
+
+
+
+## Como deberia organizarce un proyecto:
+/ai-system/
+│
+├── main.py                 # Punto de entrada del sistema
+│
+├── config/
+│   ├── settings.py         # Parámetros de modelo, rutas, API Keys
+│
+├── models/                 # Carga de LLMs
+│   ├── llm_loader.py       # Clase para inicializar modelos (HuggingFace, OpenAI, Local)
+│
+├── memory/                 # MCP - Manejo de contexto y memoria
+│   ├── memory_manager.py   # Buffer, resumen, persistencia
+│
+├── rag/                    # Retrieval-Augmented Generation
+│   ├── document_loader.py  # Lectura de PDFs, TXT, Web
+│   ├── vector_store.py     # Construcción FAISS / Chroma
+│   ├── retriever.py        # Función para hacer consultas
+│
+├── agents/                 # A2A - Agentes autónomos
+│   ├── base_agent.py       # Clase genérica de agente
+│   ├── analyst_agent.py    # Agente especializado en análisis
+│   ├── writer_agent.py     # Agente que redacta respuestas finales
+│   ├── coordinator_agent.py# Orquesta otros agentes
+│
+├── tools/                  # Herramientas externas
+│   ├── web_search.py       # Buscar en Google / Wikipedia
+│   ├── calculator.py       # Agente con capacidad matemática
+│
+└── workflows/              # Encadenamientos (Pipelines)
+    ├── qa_pipeline.py      # Pregunta → Recuperación → Respuesta
+    ├── multi_agent_flow.py # A2A: Coordinador → Agente A → Agente B
